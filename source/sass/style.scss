@@ -1,4 +1,21 @@
 // Vendor
 // ---------------------------------
 
+// vendor
 @import "vendor/normalize";
+@import "vendor/swiper";
+
+// global
+@import "global/container";
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixins";
+@import "global/utils";
+@import "global/global";
+@import "global/button";
+
+// blocks
+@import "blocks/main-header";
+@import "blocks/navigation";
+@import "blocks/hero";
+
