@@ -7,10 +7,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship programs</title>
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/ManropeLight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ManropeMedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ManropeRegular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
-  <div data-test="slider">slider</div>
+  <div class="wrapper">
+    <header class="main-header" data-test="slider">
+      <div class="main-header__container container">
+        <nav class="navigation">
+          <a class="navigation__logo" href="#" aria-current="page">
+            <img src="img/icon/icon-logo.svg" alt="Логотип" width="30" height="30">
+          </a>
+          <button class="navigation__button button">
+            <span class="navigation__button-description">Меню</span>
+            <div class="navigation__button-wrapper">
+              <svg width="20" height="20">
+                <use xlink:href="__spritemap#sprite-icon-menu"></use>
+              </svg>
+            </div>
+          </button>
+        </nav>
+        <section class="hero">
+          <div class="hero__swiper swiper" data-hero-swiper>
+            <ul class="hero__list swiper-wrapper">
+              <li class="hero__item swiper-slide">
+                <div class="hero__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-girl-mobile.webp 1x, img/picture/hero/hero-girl-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-girl-tablet.webp 1x, img/picture/hero/hero-girl-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/hero/hero-girl.webp 1x, img/picture/hero/hero-girl2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-girl-mobile.jpg 1x, img/picture/hero/hero-girl-mobile2x.jpg 2x"
+                      width="362" height="568">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-girl-tablet.jpg 1x, img/picture/hero/hero-girl-tablet2x.jpg 2x"
+                      width="768" height="1024">
+                    <img src="img/picture/hero/hero-girl.jpg" srcset="img/picture/hero/hero-girl2x.jpg 2x"
+                      loading="lazy" alt="" width="1440" height="800">
+                  </picture>
+                </div>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="hero__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-family-mobile.webp 1x, img/picture/hero/hero-family-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-family-tablet.webp 1x, img/picture/hero/hero-family-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/hero/hero-family.webp 1x, img/picture/hero/hero-family2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-family-mobile.jpg 1x, img/picture/hero/hero-family-mobile2x.jpg 2x"
+                      width="362" height="568">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-family-tablet.jpg 1x, img/picture/hero/hero-family-tablet2x.jpg 2x"
+                      width="768" height="1024">
+                    <img src="img/picture/hero/hero-family.jpg" srcset="img/picture/hero/hero-family2x.jpg 2x"
+                      loading="lazy" alt="" width="1440" height="800">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </header>
+
   <div data-test="about">about</div>
   <div data-test="programs">programs</div>
   <div data-test="grant">grant</div>
@@ -20,7 +87,9 @@
   <div data-test="contacts">contacts</div>
   <div data-test="form">form</div>
   <div data-test="footer">footer</div>
-  <script type="module" src="js/main.js"></script>
+
+</div>
+<script type="module" src="js/main.js"></script>
 </body>
 
 </html>
