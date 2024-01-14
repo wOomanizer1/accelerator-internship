@@ -1,9 +1,8 @@
-// Vendor
-// ---------------------------------
-
 // vendor
 @import "vendor/normalize";
-@import "vendor/swiper";
+
+// swiper
+@import 'swiper/css';
 
 // global
 @import "global/container";
@@ -18,4 +17,4 @@
 @import "blocks/main-header";
 @import "blocks/navigation";
 @import "blocks/hero";
-
+@import "blocks/hero-pagination";
