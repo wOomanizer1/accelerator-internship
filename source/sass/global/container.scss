@@ -3,4 +3,14 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 100px;
+
+  @include vp-1440 {
+    padding: 0 45px;
+    max-width: 768px;
+  }
+
+  @include vp-768 {
+    padding: 0 15px;
+    max-width: 320px;
+  }
 }

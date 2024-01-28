@@ -1,0 +1,37 @@
+.social {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  min-width: 148px;
+  align-items: center;
+
+  @include vp-1440 {
+    grid-column: 2 / -1;
+    min-width: 128px;
+  }
+
+  @include vp-768 {
+    grid-column: 1 / -1;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.social__link {
+  display: block;
+  max-height: 36px;
+
+  @include vp-768 {
+    max-height: 26px;
+  }
+}
+
+.social__link svg {
+
+  @include vp-768 {
+    width: 26px;
+    height: 26px;
+  }
+}
