@@ -1,18 +1,20 @@
 // vendor
 @import "vendor/normalize";
+@import "vendor/custom-select";
 @import "vendor/data-accordion";
-@import "vendor/data-tabs";
 
 // swiper
 @import "swiper/css";
+@import 'swiper/css/grid';
 
 // global
 @import "mixins";
 @import "variables";
 @import "global/container";
-@import "global/fonts";
-@import "global/utils";
 @import "global/global";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
 @import "global/button";
 
 // blocks
@@ -23,12 +25,15 @@
 @import "blocks/about";
 @import "blocks/programs";
 @import "blocks/menu";
+
 @import "blocks/slider";
 @import "blocks/slider-nav";
 @import "blocks/grant";
 @import "blocks/news";
+@import "blocks/cards";
 @import "blocks/faq";
 @import "blocks/reviews";
 @import "blocks/contacts";
+@import "blocks/form";
 @import "blocks/main-footer";
 @import "blocks/social";

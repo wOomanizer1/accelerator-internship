@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @include vp-768 {
+    gap: 40px;
+  }
 }
 
 .about__wrapper {
@@ -9,6 +13,15 @@
   max-width: 1134px;
   width: 100%;
   justify-content: space-between;
+
+  @include vp-1440 {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  @include vp-768 {
+    gap: 35px;
+  }
 }
 
 .about__text-content-heading {
@@ -16,6 +29,14 @@
   flex-direction: column;
   gap: 38px;
   max-width: 477px;
+
+  @include vp-1440 {
+    gap: 24px;
+  }
+
+  @include vp-768 {
+    gap: 10px;
+  }
 }
 
 .about__text-content-heading h2 {
@@ -26,6 +47,16 @@
   line-height: 50px;
   width: 100%;
   text-align: left;
+
+  @include vp-1440 {
+    font-size: 34px;
+  }
+
+  @include vp-768 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 1px 3px;
+  }
 }
 
 .about__text-content-heading p {
@@ -33,6 +64,17 @@
   font-size: 22px;
   line-height: 32px;
   max-width: 398px;
+
+  @include vp-1440 {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 489px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .about__text-content-subtitle {
@@ -40,6 +82,14 @@
   flex-direction: column;
   gap: 32px;
   max-width: 498px;
+
+  @include vp-1440 {
+    gap: 22px;
+  }
+
+  @include vp-768 {
+    gap: 10px;
+  }
 }
 
 .about__text-content-subtitle h3 {
@@ -49,15 +99,46 @@
   font-weight: 400;
   line-height: 36px;
   text-align: left;
-  max-width: 166px;
+
+  @include vp-1440 {
+    font-size: 28px;
+    line-height: 28px
+  }
+
+  @include vp-768 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -4px;
+  }
 }
 
 .about__text-content-subtitle p {
   margin: 0;
+
+  @include vp-1440 {
+    line-height: 20px;
+  }
+
+  @include vp-768 {
+    font-size: 14px;
+  }
 }
 
 .about__button {
   max-width: 277px;
+
+  @include vp-1440 {
+    margin-top: 10px
+  }
+
+  @include vp-768 {
+    max-width: 221px;
+    margin-top: 15px
+  }
+}
+
+.about__button-description {
+  justify-self: center;
 }
 
 .about__list {
@@ -69,12 +150,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+
+  @include vp-1440 {
+    padding: 40px;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  @include vp-768 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 20px 40px 10px;
+  }
 }
 
 .about__item {
   padding: 22px 0 0 20px;
   max-width: 498px;
   position: relative;
+
+  @include vp-1440 {
+    max-width: 284px;
+  }
 }
 
 .about__group {
@@ -94,6 +192,21 @@
     padding: 29px 53px;
     gap: 46px;
   }
+
+  @include vp-1440 {
+    padding: 29px;
+    padding-bottom: 25px;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 264px;
+  }
+
+  @include vp-768 {
+    padding: 19px;
+    padding-bottom: 23px;
+    gap: 4px;
+    min-width: 240px;
+  }
 }
 
 .about__group b {
@@ -105,6 +218,19 @@
   color: $color-white;
   width: min-content;
   min-width: 134px;
+
+  @include vp-1440 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    min-width: 200px;
+  }
 }
 
 .about__group p {
@@ -115,10 +241,23 @@
   margin: 0;
   width: min-content;
   min-width: 161px;
+
+  @include vp-1440 {
+    min-width: 218px;
+  }
+
+  @include vp-768 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .about__group--primary p {
   min-width: 178px;
+
+  @include vp-768 {
+    min-width: 200px;
+  }
 }
 
 .about__group--secondary p {
@@ -133,4 +272,12 @@
   width: 42px;
   height: 42px;
   background-color: #316DC2;
+}
+
+.about__group br {
+  display: none;
+
+  @include vp-768 {
+    display: block;
+  }
 }
