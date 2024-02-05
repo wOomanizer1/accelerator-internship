@@ -8,7 +8,7 @@
   padding: 3px;
   padding-left: 19px;
   border-radius: 30px;
-  border: 1px solid #316DC2;
+  border: 1px solid #316dc2;
   background-color: $color-transparent;
 
   &--small {
@@ -24,8 +24,8 @@
     grid-template-columns: 1fr 34px;
 
     &--small {
-    padding: 0;
-  }
+      padding: 0;
+    }
   }
 }
 
@@ -34,7 +34,7 @@
   font-weight: 500;
   line-height: 14px;
   text-transform: uppercase;
-  color: #316DC2;
+  color: #316dc2;
   align-self: center;
   justify-self: start;
 
@@ -48,7 +48,7 @@
   width: 46px;
   height: 46px;
   border-radius: 44px;
-  background-color: #316DC2;
+  background-color: #316dc2;
   display: flex;
   align-items: center;
   align-self: center;

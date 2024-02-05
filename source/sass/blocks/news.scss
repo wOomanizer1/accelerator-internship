@@ -18,7 +18,7 @@
 
 .news__container h2 {
   margin: 0;
-  color: #316DC2;
+  color: #316dc2;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
@@ -63,14 +63,13 @@
 }
 
 .news__item {
-
   @include vp-768 {
     height: min-content;
   }
 }
 
 .news__button {
-  color: #316DC2;
+  color: #316dc2;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -81,7 +80,7 @@
 
   &--current {
     border-radius: 20px;
-    border: 1px solid #316DC2;
+    border: 1px solid #316dc2;
     padding: 11px 24px;
     opacity: 1;
   }
@@ -135,7 +134,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #316DC2;
+  color: #316dc2;
   opacity: 0.5;
   display: flex;
   justify-content: center;
@@ -154,13 +153,12 @@
 
 .news__wrapper-slider-button .swiper-pagination-bullet-active {
   border-radius: 20px;
-  background-color: #316DC2;
+  background-color: #316dc2;
   color: $color-white;
   opacity: 1;
 }
 
 .news__swiper {
-
   @include vp-1440 {
     width: 678px;
     height: 730px;
