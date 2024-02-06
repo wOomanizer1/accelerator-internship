@@ -252,6 +252,34 @@
 
 .form__button {
   border-color: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+  }
+}
+
+.form__button:hover .form__button-description,
+.form__button:focus .form__button-description {
+  color: #316dc2;
+}
+
+.form__button:hover .form__button-wrapper,
+.form__button:focus .form__button-wrapper {
+  background-color: #316dc2;
+}
+
+.form__button:hover svg,
+.form__button:focus svg {
+  color: $color-white;
+}
+
+
+.form__button:active svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form__button:disabled svg {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form__button-description {
@@ -268,9 +296,6 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  font-size: 12px;
-  line-height: 12px;
-  opacity: 0.9;
   min-height: 20px;
   cursor: pointer;
   position: relative;
@@ -280,25 +305,55 @@
   }
 }
 
+.form__checkbox-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .form__toggle input {
   position: absolute;
   appearance: none;
 }
 
-.checkbox-view {
+.form__toggle .form__checkbox-view {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20px;
   height: 20px;
   border-radius: 2px;
-  background-color: $color-white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #316dc2;
 }
 
-.checkbox-view .checkbox-view {
+input[type="checkbox"]:checked + .form__checkbox-view {
   color: $color-white;
 }
 
-input[type="checkbox"]:checked + .checkbox-view {
-  color: #316dc2;
+input[type="checkbox"]:hover + .form__checkbox-view,
+input[type="checkbox"]:focus + .form__checkbox-view {
+  border-color: $color-white;
+}
+
+input[type="checkbox"]:hover ~ .form__checkbox-text,
+input[type="checkbox"]:focus ~ .form__checkbox-text {
+  color: $color-white;
+}
+
+input[type="checkbox"]:active + .form__checkbox-view {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="checkbox"]:active ~ .form__checkbox-text {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="checkbox"]:disabled + .form__checkbox-view {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: transparent;
+}
+
+input[type="checkbox"]:disabled ~ .form__checkbox-text {
+  color: rgba(255, 255, 255, 0.6);
 }
